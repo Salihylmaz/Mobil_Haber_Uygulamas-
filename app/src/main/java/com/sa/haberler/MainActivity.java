@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     void getNews(String category,String query){
         changeInProgress(true);
-        NewsApiClient newsApiClient = new NewsApiClient("c342cf31dc494f00b6bd57464bfd6ef9");
+        NewsApiClient newsApiClient = new NewsApiClient("your api key");
         newsApiClient.getTopHeadlines(
                 new TopHeadlinesRequest.Builder()
                         .language("tr") //resim için en'e al çünkü tr'de resim koymamışlar
